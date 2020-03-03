@@ -8,7 +8,7 @@ class Commercial constructor(
     propertyName: String,
     multiProperty: Boolean
 ) : Customer(customerName, customerPhone, customerAddress, squareFootage) {
-
+    //Declare and initialize variables specific to a commercial customer
     private var propertyName: String = ""
     private var multiProperty = false
     private var commercialRate: Double = 0.0
@@ -21,6 +21,8 @@ class Commercial constructor(
         this.multiProperty = multiProperty
     }
 
+    //Calculate weekly charges based on variables and parameters and print all by calling the customer class printAll()
+    //and then adding commercial specific information
     fun weeklyCharges() {
 
         commercialRate = (squareFootage / 1000) * 5

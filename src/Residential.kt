@@ -7,7 +7,7 @@ class Residential constructor(
     squareFootage: Double,
     senior: Boolean
 ) : Customer(customerName, customerPhone, customerAddress, squareFootage) {
-
+    //Declare and initialize variables specific to a residential customer
     private var senior = false
     private var weeklyRate = ""
     private var residentialRate: Double = 0.0
@@ -18,6 +18,8 @@ class Residential constructor(
         this.senior = senior
     }
 
+    //Calculate weekly charges based on variables and parameters and print all by calling the customer class printAll()
+    //and then adding residential specific information
     fun weeklyCharges() {
 
         residentialRate = (squareFootage / 1000) * 6

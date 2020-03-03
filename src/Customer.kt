@@ -4,7 +4,7 @@ open class Customer constructor(
     customerAddress: String,
     squareFootage: Double
 ) {
-
+    //Declare and initialize customer info variables that all customers will have
     private var customerName: String = ""
     private var customerAddress: String = ""
     private var customerPhone: String = ""
@@ -18,6 +18,7 @@ open class Customer constructor(
         this.squareFootage = squareFootage
     }
 
+    //Print all function to print basic customer information
     fun printAll() {
         println("Customer: $customerName \nAddress: $customerAddress \nPhone: $customerPhone \nSquare Footage: $squareFootage")
     }
